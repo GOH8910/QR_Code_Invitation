@@ -1,0 +1,15 @@
+# Ignore virtual environment
+myenv/
+path/to/your-venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore environment variable files
+.env
+
+halloween-party-438713-87c01c552e70.json

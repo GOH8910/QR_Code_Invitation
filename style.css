@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-image: url('Web\ Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    min-height: 95vh;
+    /* Ensures the background covers the entire viewport */
+    margin: 0;
+    /* Removes any default margin */
+    padding: 0;
+    /* Removes any default padding */
+}
+
+#video {
+    margin-top: 160px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    /* margin-bottom: 20px; */
+    transform: scaleX(-1);
+}
+
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+#ghost {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /* Center the ghost and scale it to 0 */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Define the keyframes for the jump and zoom animation */
+@keyframes jumpZoom {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(3);
+        /* Scales to 200% */
+        opacity: 1;
+    }
+
+    75% {
+        transform: translate(-50%, -50%) scale(3);
+        /* Holds the size */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+        /* Scales back to 0 */
+        opacity: 0;
+    }
+}
+
+/* Animation class to trigger the ghost jump */
+.ghost-jump {
+    animation: jumpZoom 1s ease-in-out;
+    /* Duration matches with 2-second hold */
+}

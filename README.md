@@ -11,9 +11,7 @@ This Python-based project automates the invitation process for events. It reads 
 4. [Setup](#setup)
    - [Google Sheets API Setup](#google-sheets-api-setup)
 5. [Usage](#usage)
-6. [File Structure](#file-structure)
-7. [Future Improvements](#future-improvements)
-8. [License](#license)
+6. [Future Improvements](#future-improvements)
 
 ---
 
@@ -123,26 +121,6 @@ python -m http.server
 
 ---
 
-## 📂 File Structure
-
-```
-QR_Code_Invitation/
-├── data/
-│   └── attendees_with_qr_codes.xlsx
-├── src/
-│   ├── QRCode_Generator.py         # Main script for QR + email
-│   ├── email_sender.py             # Sends emails via SMTP
-│   └── utils.py                    # Helper functions
-├── credentials/
-│   └── service_account.json
-├── public/                         # (Optional) QR scanner page
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-
----
-
 ## 🚧 Future Improvements
 
 - Add web dashboard to track check-ins in real time
@@ -152,6 +130,3 @@ QR_Code_Invitation/
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.

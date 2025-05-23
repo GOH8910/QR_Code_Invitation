@@ -1,6 +1,6 @@
 # 🎟️ QR Code Party Invitation System
 
-This Python-based project automates the invitation process for events. It reads RSVP data from an Excel file or Google Sheets, generates **unique QR codes** for each guest, and sends **personalised email invitations**. Upon arrival, guests can scan their QR codes for check-in, allowing for efficient attendance tracking.
+This Python-based project automates the invitation process for events. It reads RSVP data from an Excel file or Google Sheets, generates **unique QR codes** for each guest, and sends **personalised email invitations**. Upon arrival, guests can scan their QR codes for check-in, allowing for efficient attendance tracking. Originally built as a fun project for a Halloween party, this system was designed to simplify invitation management and guest check-ins. While it started as a seasonal hack, it can easily be adapted for any event requiring QR-based invitations and attendance tracking.
 
 ---
 
